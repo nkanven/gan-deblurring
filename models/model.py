@@ -204,8 +204,8 @@ class DEBLUR(object):
         summary_writer = tf.summary.FileWriter(self.train_dir, sess.graph, flush_secs=30)
 
         for step in xrange(sess.run(global_step), self.max_steps + 1):
+            print("Epochs ")
             print(xrange(sess.run(global_step), self.max_steps + 1))
-            input("stop here")
             start_time = time.time()
 
             # update G network
@@ -276,7 +276,6 @@ class DEBLUR(object):
         self.saver = tf.train.Saver()
         self.load(sess, self.train_dir, step=523000)
         print(imgsName)
-        input()
         for imgName in imgsName:
             blur = scipy.misc.imread(os.path.join(input_path, imgName))
             h, w, c = blur.shape
