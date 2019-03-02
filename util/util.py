@@ -26,6 +26,7 @@ def ResnetBlock(x, dim, ksize, scope='rb'):
         net = slim.conv2d(net, dim, [ksize, ksize], activation_fn=None, scope='conv2')
         return net + x
 
+"""
 def blurImage():
     #face = scipy.misc.face()
     list_dir = os.listdir(r'C:\Users\Nkondog\Desktop\DL_Training_Pix')
@@ -40,7 +41,7 @@ def blurImage():
         #input()
         #face = face.filter(ImageFilter.GaussianBlur(radius=6))
         face.save(im.split("\\")[-1])
-        """with open('datalist_gopro.txt', 'a') as t:
+        ""with open('datalist_gopro.txt', 'a') as t:
             ti = "GOIMG/sharp/"+im+" GOIMG/blur/"+im+"\n"
             t.write(str(ti))
     #face.show()
