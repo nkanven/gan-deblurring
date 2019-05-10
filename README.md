@@ -1,6 +1,3 @@
-# Scale-recurrent Network for Deep Image Deblurring
-by [Xin Tao](http://www.xtao.website), Hongyun Gao, [Xiaoyong Shen](http://xiaoyongshen.me/), [Jue Wang](http://juew.org), [Jiaya Jia](http://www.cse.cuhk.edu.hk/leojia/). ([pdf](http://www.xtao.website/projects/srndeblur/srndeblur_cvpr18.pdf))
-
 ### Our results on real data
 <img src="./imgs/teaser.jpg" width="100%" alt="Real Photo">
 
@@ -93,23 +90,6 @@ If you would like to compare performance against our method, you can use
 model `gray` and `lstm`. 
 If you want to restore blurry images you can try `gray` and `color`. 
 And `color` is very useful in low-light noisy images.  
-
-## Reference
-If you use any part of our code, or SRN-Deblur is useful for your research, please consider citing: 
-
-```bibtex
-@inproceedings{tao2018srndeblur,
-  title={Scale-recurrent Network for Deep Image Deblurring},
-  author={Tao, Xin and Gao, Hongyun and Shen, Xiaoyong and Wang, Jue and Jia, Jiaya},
-  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2018}
-}
-```
-
-## Contact
-We are glad to hear if you have any suggestions and questions.
-
-Please send email to xtao@cse.cuhk.edu.hk
 
 ## Reference
 [1] `Sun et al.` J. Sun, W. Cao, Z. Xu, and J. Ponce. *Learning a convolutional
